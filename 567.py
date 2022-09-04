@@ -10,17 +10,17 @@ class Solution:
         # create two arrays that represent the occurance of each letter, as we know its bound by lowercase         English alphabet
         s1Count, s2Count = [0] * 26, [0] * 26
         
-         # iterate through each string and count occurance of each letter
+        # iterate through each string and count occurance of each letter
         for i in range(len(s1)):
             s1Count[ord(s1[i]) - ord("a")] += 1
             s2Count[ord(s2[i]) - ord("a")] += 1
                
-         # to know if the arrays are equal we need a variable to determine how many out of the 26                 characters are equivalent
+        # to know if the arrays are equal we need a variable to determine how many out of the 26                 characters are equivalent
         matches = 0
         for i in range(26):
             matches += 1 if s1Count[i] == s2Count[i] else 0
 
-        # starting with left pointer on s[0] and ight pointer moving from len(s1) to len(s2)
+        # starting with left pointer on s[0] and right pointer moving from len(s1) to len(s2)
         l = 0
         for r in range(len(s1), len(s2)):
             
