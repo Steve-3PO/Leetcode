@@ -1,7 +1,7 @@
 # Counting Bits
 
 class Solution:
-    def countBits(self, n: int) -> List[int]:
+    def countBits(self, n: int) -> list[int]:
 
         # first need an array to count bits
         dfs = [0] * (n + 1)
