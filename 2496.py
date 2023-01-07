@@ -1,7 +1,7 @@
 # Maximum Value of a String in an Array
 
 class Solution:
-    def maximumValue(self, strs: List[str]) -> int:
+    def maximumValue(self, strs: list[str]) -> int:
 
         # variable to track max value
         max_seen = 0

@@ -1,7 +1,7 @@
 # Find Words That Can Be Formed by Characters
 
 class Solution:
-    def countCharacters(self, words: List[str], chars: str) -> int:
+    def countCharacters(self, words: list[str], chars: str) -> int:
 
         # since all strings only use lower case alphabet we can use ascii values in a string to map
         charmap = [0] * 26
